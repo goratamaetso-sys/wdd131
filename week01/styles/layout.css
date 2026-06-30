@@ -1,10 +1,83 @@
-body{
+/* Reset */
+* {
     margin: 0;
-    display: grid;
-    background-color: antiquewhite;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-nav{
+body {
+    font-family: Georgia, serif;
+    background: #ffffff;
+}
+
+.grid-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas:
+        "header header"
+        "nav nav"
+        "main aside"
+        "footer footer";
+    min-height: 100vh;    
+}
+
+/* Header */
+header {
+    grid-area: header;
+    background: #3a3a3a;
+    color: white;
+    padding: 45px;
+}
+
+/* Navigation */
+nav {
+    grid-area: nav;
+    background: #000;
     display: flex;
-    color: blue;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main */
+main {
+    
+    grid-area: main;
+    background: #d9d9d9;
+    padding: 20px;
+}
+
+/* Aside */
+aside {
+    
+    grid-area: aside;
+    background: white;
+    padding: 20px;
+    border-left: 1px solid #ccc;
+}
+
+/*footer*/
+footer {
+    grid-area: footer;
+    background: #3a3a3a;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* Headings */
+h1,
+h2 {
+    font-weight: normal;
 }
