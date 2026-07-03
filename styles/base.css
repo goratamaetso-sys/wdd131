@@ -5,21 +5,21 @@
 }
 
 body {
-    font-family: Roboto, sans-serif;
-    background: #f5f5f5;
+    font-family: Noto Sans, Arial, sans-serif;
+    background: #fff;
     color: #333;
 }
 
 header {
-    background: #003366;
-    color: white;
+    background: #034d17;
+    color: #fff;
     text-align: center;
 
-    font-family: Merriweather, serif;
+    font-family: Advent Pro, sans-serif;
     font-size: 2rem;
 }
 
-.course-title {
+#course-title {
     display: block;
     text-align: center;
     font-size: 3rem;
@@ -32,7 +32,7 @@ nav {
 }
 
 nav a {
-    color: white;
+    color: #fff;
     text-decoration: none;
     font-size: 1rem;
     padding: 1rem 1rem;
@@ -40,8 +40,8 @@ nav a {
 }
 
 nav a:hover {
-    background: white;
-    color: #00509d;
+    background: #fff;
+    color: #034d17;
 }
 
 
@@ -62,15 +62,15 @@ main h1 {
 }
 
 .card {
-    background: white;
+    background: #fff;
     border-radius: 10px;
     padding: 1rem;
     box-shadow: 0 0 10px rgba(0,0,0,.2);
 }
 
 .card h2 {
-    background: #003366;
-    color: white;
+    background: #034d17;
+    color: #fff;
     text-align: center;
     margin-bottom: 1rem;
     padding: 12px;
@@ -84,11 +84,12 @@ main h1 {
 }
 
 .card img {
-    width: 200px;
+    max-width: 100%;
+    height: auto;
     display: block;
     margin: 1rem auto;
     border-radius: 10px;
-}
+}   
 
 .card p {
     line-height: 1.6;
@@ -103,17 +104,13 @@ main h1 {
 
 .about img {
     width: 180px;
-    height: auto;
+
 }
 
 .about p {
     flex: 1;
 }
 
-.about-card h2 {
-    text-align: center;
-    margin: 20px 0 10px;
-}
 
 .country-info {
     display: flex;
@@ -141,8 +138,8 @@ main h1 {
 
 
 footer {
-background: #003366;
-color: white;
+background: #034d17;
+color: #fff;
 text-align: center;
 padding: 1rem;
 }
