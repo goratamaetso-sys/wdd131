@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Page | WDD 131 - Dynamic Web Fundamentals</title>
+    <meta name="author" content="Gorata Maetso">
+    <meta name="description" content="This is the page for a country I have lived in and a place in the country that I wish to visit.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&amp;family=Noto+Sans:ital,wght@0,100..900;1,100..900&amp;display=swap">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Okavango Delta</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(min-width: 1000px)" srcset="images/okavangodelta-large.webp">
+                <source media="(min-width: 750px)" srcset="images/okavangodelta-medium.webp">
+                <img src="images/okavango-delta-small.webp" alt="The Okavango Delta" width="500" height="250">
+            </picture>
+        </div>
+        <section class="data-card">
+            <h2>Data</h2>
+            <dl>
+                <dt>Area:</dt>
+                <dd>15,000sq km</dd>
+                <dt>Population:</dt>
+                <dd>0</dd>
+                <dt>Main Hub City:</dt>
+                <dd>Maun, Botswana</dd>
+                <dt>Currency:</dt>
+                <dd>Botswana Pula(BWP)</dd>
+                <dt>Time Zone:</dt>
+                <dd>UTC+2</dd>
+                <dt>Calling Code:</dt>
+                <dd>+267</dd>
+            </dl>
+            
+        </section>
+        <section class="weather-card">
+            <h2>Weather</h3>
+            <img src="images/clear-day.svg" alt="Clear day icon">
+            <dl>
+                <dt>Temperature:</dt>
+                <dd>25.9°C</dd>
+                <dt>Condition:</dt>
+                <dd>Clear and bright</dd>
+                <dt>Wind:</dt>
+                <dd>8 to 12km/h</dd>
+                <dt>Wind Chill:</dt>
+                <dd id="windchill"></dd>
+            </dl>
+            
+        </section>
+    </main>
+    <footer>
+         <p>©  <span id="currentyear"></span> ❤️Gorata Maetso | South Africa❤️</p>
+        <p id="lastModified"></p>
+    </footer>
+    
+</body>
+</html>

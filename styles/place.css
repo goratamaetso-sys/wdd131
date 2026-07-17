@@ -1,0 +1,164 @@
+/* Google Font */
+body {
+    font-family: "Noto Sans", sans-serif;
+    margin: 0;
+    background: #f4f4f4;
+    color: #222;
+}
+
+/* Header */
+header {
+    background: #140751;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+header h1 {
+    margin: 0;
+    font-family: "Advent Pro", sans-serif;
+    font-size: 3rem;
+}
+
+/*main*/
+main {
+    position: relative;
+}
+
+/* Hero */
+
+.hero {
+    position: relative;
+}
+
+.hero picture,
+.hero img {
+    width: 100%; 
+    height: auto;
+    display: block;
+}
+/* Cards */
+
+.data-card,
+.weather-card {
+    background: rgb(47, 194, 248);
+    padding: 1.5rem;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 6px rgba(0,0,0,.15);
+    
+   
+}
+
+.data-card h2,
+.weather-card h2 {
+    background-color: #020237;
+    font-family: "Noto", sans-serif;
+    text-align: center;
+    margin-top: 0;
+    color: #ffff;
+}
+/*Description Lists*/
+
+dl {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: .5rem 1rem;
+    margin: 0;
+}
+
+dt {
+    font-weight: bold;
+   
+}
+
+dd {
+    margin: 0;
+    
+}
+
+/*weather icon*/
+
+.weather-card img {
+    display: block;
+    width: 70px;
+    margin: auto 1rem;
+}
+
+/* Footer */
+
+footer {
+    background: #140751;
+    color: rgb(233, 233, 236);
+    text-align: center;
+    padding: 1rem;
+}
+
+footer p {
+    margin: .3rem;
+}
+
+/*mobile*/
+@media (max-width: 767px) {
+
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .data-card,
+    .weather-card {
+        margin: 1rem;
+    }
+
+    .weather-card img {
+        display: block;
+    }
+}
+
+
+/* Desktop*/
+
+@media (min-width: 768px) {
+
+    main {
+        position: relative;
+    }
+
+
+    .hero img {
+        width: 100%;
+        height: auto;
+    }
+
+    .data-card,
+    .weather-card {
+        position: absolute;
+        background: rgba(255, 255, 255, 0.6);
+        padding: 1.5rem;
+        text-align: center;
+    }
+
+    .data-card {
+        width: 300px;
+        top: 2rem;
+        left: 2rem;
+    }
+
+    .weather-card {
+        width: 280px;
+        bottom: 2rem;
+        right: 2rem;
+    }
+
+
+    /* Hide SVG on desktop */
+    .weather-card img {
+        display: none;
+    }
+
+    /* Display weather icon as pseudo-element */
+    .weather-card h2::after {
+        content: " ☀️";
+        float: right;
+    }
+}
