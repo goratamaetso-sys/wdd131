@@ -126,7 +126,7 @@ main {
 }
 
 .gallery h2 {
-    font: "Advent Pro", sans-serif;
+    font-family: "Advent Pro", sans-serif;
     font-size: 2rem;
     margin-bottom: 1rem;
     color: #052556;
