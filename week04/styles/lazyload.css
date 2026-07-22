@@ -1,0 +1,56 @@
+/* Reset & Base */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    background-color: #fff;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Headings */
+h1 {
+    font-family: 'Advent Pro', sans-serif;
+    text-align: center;
+    font-size: 2rem;
+    margin: 1.5rem 0;
+    color: #444;
+}
+
+/* Main Gallery */
+main {
+    width: 400px;
+    margin: 0 auto;
+    padding: 2rem;
+    display: block;
+}
+
+img {
+    width: 100%;
+    background: #000;
+    animation: fade 10s;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #9d9af3;
+    color: #0a0a0a;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: 0.9rem;
+}
+
